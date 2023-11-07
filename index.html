@@ -15,12 +15,12 @@
             </li>
             <li>
                 <label for="rfc">RFC</label>
-                <input type="text" name="rfc" pattern="[A-Za-z].{10,}" placeholder="10 A 13 caracteres" maxlength="13" required/>
+                <input type="text" name="rfc" pattern="[A-Za-z].{10m}" placeholder="13 caracteres" maxlength="13" required>
             </li>
             <li>
                 <label for="periodo">Mes</label>
                 <select name="periodo" required>
-                    <option value="">opci&oacute;n</option>
+                    <option value="">Opción</option>
                     <option value="enero">Enero</option>
                     <option value="febrero">Febrero</option>
                     <option value="marzo">Marzo</option>
@@ -36,23 +36,23 @@
                 </select>
             </li>
             <li>
-                <label for="fecha">?Qu&eacute; d&iacute;a es hoy?</label>
-                <input type="date" name="fecha" min="2022-10-25" max="2023-10-25" value="<?php echo('Y-M-D');?>" maxlength="10">
+                <label for="fecha">Fecha de hoy: </label>
+                <input type="date" name="fecha" min="2022-10-25" max="2023-12-25" value="<?php echo('Y-M-D');?>" maxlength="10" required>
             </li>
             <li>
                 <label for="name">Nombre: </label>
-                <input type="text" name="name">
+                <input type="text" name="name" placeholder="Ingrese su nombre completo." maxlength="50" required>
             </li>
             <li>
                 <label for="email">Correo electronico: </label>
-                <input type="text" name="email">
+                <input type="text" name="email" placeholder="Ingrese su correo electrónico." pattern="[A-Za-z].{10m}" maxlength="80" required>
             </li>
             <li>
-                <label for="tel">Telefono</label>
-                <input type="tel" name="tel" id="">
+                <label for="tel">Número de teléfono: </label>
+                <input type="text" name="telefono" placeholder="123-456-7890" maxlength="12" required>
             </li>
             <li>
-                <label for="region">Selecciona el pais</label>
+                <label for="region">Seleccione el pais: </label>
                 <select name="region" id="">
                     <option value="pais">Mexico</option>
                     <option value="pais">Brasil</option>
